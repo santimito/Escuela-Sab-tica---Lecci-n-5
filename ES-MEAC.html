@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lección 5 - La Pascua | Guía MEAC Interactiva</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #eef2f7; padding: 20px; position: relative; }
+    h1 { text-align: center; color: #2c3e50; }
+    .versiculo { background-color: #fff; border-left: 5px solid #2c3e50; padding: 15px; margin-bottom: 20px; font-style: italic; }
+    .boton, .sub-boton, .volver { display: block; width: 100%; padding: 15px; margin: 10px 0; font-size: 16px; background-color: #3498db; color: white; border: none; border-radius: 8px; cursor: pointer; text-align: left; }
+    .sub-boton { background-color: #2ecc71; }
+    .volver { background-color: #95a5a6; }
+    .boton:hover, .sub-boton:hover, .volver:hover { opacity: 0.9; }
+    .contenido, .sub-contenido { display: none; padding: 15px; background-color: #ffffff; border: 2px solid #2980b9; border-radius: 8px; margin-bottom: 20px; animation: fadeIn 0.4s ease-in-out; }
+    @keyframes fadeIn { from {opacity: 0;} to {opacity: 1;} }
+    .tiempo { color: #8e44ad; font-weight: bold; }
+    ul { margin-top: 10px; }
+    .marca { position: fixed; bottom: 10px; right: 20px; color: #999; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>Lección 5: La Pascua - Guía Interactiva MEAC</h1>
+
+  <div class="versiculo">
+    “Y cuando sus hijos les pregunten: ‘¿Qué significa este rito?’, responderán: ‘Es la víctima de la Pascua en honor del Señor, que pasó por alto las casas de los israelitas en Egipto, cuando hirió a los egipcios, y libró nuestras casas’.” <br>
+    <strong>Éxodo 12:26–27</strong>
+  </div>
+
+  <div id="inicio">
+    <button class="boton" onclick="mostrarSeccion('motiva')">🟡 MOTIVA – Mueve el corazón</button>
+    <button class="boton" onclick="mostrarSeccion('explora')">🔵 EXPLORA – Escudriña la Palabra</button>
+    <button class="boton" onclick="mostrarSeccion('aplica')">🟢 APLICA – Analiza tu caminar con Dios</button>
+    <button class="boton" onclick="mostrarSeccion('crea')">🔴 CREA – Comparte y testifica</button>
+  </div>
+
+  <div id="motiva" class="contenido">
+    <p class="tiempo">Tiempo sugerido: 5 minutos</p>
+    <button class="sub-boton" onclick="mostrarDetalle('motiva1')">📍 Pregunta de conexión</button>
+    <button class="sub-boton" onclick="mostrarDetalle('motiva2')">🎯 Actividad emocional</button>
+    <button class="volver" onclick="volverInicio()">⬅ Volver al inicio</button>
+  </div>
+  <div id="motiva1" class="sub-contenido">
+    <p><strong>¿Has tenido que hacer algo "raro" para obedecer a Dios?</strong> Introduce el tema hablando de lo inusual de marcar las casas con sangre. Esta pregunta busca conexión emocional con los alumnos.</p>
+  </div>
+  <div id="motiva2" class="sub-contenido">
+    <p><strong>Actividad:</strong> Pide a los estudiantes que recuerden una situación donde obedecer a Dios los hizo destacar o ir contra la corriente.</p>
+  </div>
+
+  <div id="explora" class="contenido">
+    <p class="tiempo">Tiempo sugerido: 20 minutos</p>
+    <button class="sub-boton" onclick="mostrarDetalle('explora1')">📖 Textos bíblicos clave</button>
+    <button class="sub-boton" onclick="mostrarDetalle('explora2')">🔍 Actividad grupal</button>
+    <button class="volver" onclick="volverInicio()">⬅ Volver al inicio</button>
+  </div>
+  <div id="explora1" class="sub-contenido">
+    <ul>
+      <li>Éxodo 11:1–10</li>
+      <li>Éxodo 12:1–28</li>
+      <li>1 Corintios 5:7</li>
+      <li>Hebreos 11:28</li>
+    </ul>
+    <p>Estudia cómo la Pascua apuntaba a la redención en Cristo.</p>
+  </div>
+  <div id="explora2" class="sub-contenido">
+    <p>Forma grupos: uno representa a los egipcios, otro a los israelitas. Cada uno explica qué significaba para ellos la décima plaga.</p>
+  </div>
+
+  <div id="aplica" class="contenido">
+    <p class="tiempo">Tiempo sugerido: 10 minutos</p>
+    <button class="sub-boton" onclick="mostrarDetalle('aplica1')">🧠 Preguntas reflexivas</button>
+    <button class="sub-boton" onclick="mostrarDetalle('aplica2')">✍️ Oración de gratitud</button>
+    <button class="volver" onclick="volverInicio()">⬅ Volver al inicio</button>
+  </div>
+  <div id="aplica1" class="sub-contenido">
+    <ul>
+      <li>¿Cómo has sido protegido por Dios?</li>
+      <li>¿Qué representa la sangre del Cordero para ti hoy?</li>
+    </ul>
+  </div>
+  <div id="aplica2" class="sub-contenido">
+    <p>Pide a cada persona que escriba (mentalmente o en papel) una oración de gratitud por la salvación que tienen en Cristo.</p>
+  </div>
+
+  <div id="crea" class="contenido">
+    <p class="tiempo">Tiempo sugerido: 5 minutos</p>
+    <button class="sub-boton" onclick="mostrarDetalle('crea1')">📣 Desafío misionero</button>
+    <button class="sub-boton" onclick="mostrarDetalle('crea2')">📜 Carta desde Egipto</button>
+    <button class="volver" onclick="volverInicio()">⬅ Volver al inicio</button>
+  </div>
+  <div id="crea1" class="sub-contenido">
+    <p>Desafía a compartir con alguien cómo la sangre de Cristo los ha salvado. Puede ser un testimonio, mensaje breve o versículo.</p>
+  </div>
+  <div id="crea2" class="sub-contenido">
+    <p>Actividad: escribir una carta como si fueras un hebreo liberado en la noche de la Pascua. Luego, compártela con el grupo o en tu familia.</p>
+  </div>
+
+  <div class="marca">Educa 144k</div>
+
+  <script>
+    function mostrarSeccion(id) {
+      ocultarTodo();
+      document.getElementById('inicio').style.display = 'none';
+      document.getElementById(id).style.display = 'block';
+    }
+
+    function mostrarDetalle(id) {
+      document.querySelectorAll('.sub-contenido').forEach(el => el.style.display = 'none');
+      document.getElementById(id).style.display = 'block';
+    }
+
+    function volverInicio() {
+      ocultarTodo();
+      document.getElementById('inicio').style.display = 'block';
+    }
+
+    function ocultarTodo() {
+      document.querySelectorAll('.contenido, .sub-contenido').forEach(el => el.style.display = 'none');
+    }
+  </script>
+</body>
+</html>
